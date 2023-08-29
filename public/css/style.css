@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(247, 172, 245);
+}
+.cardtitle{
+    background-color: rgb(255, 157, 222);
+    font-size: large;
+}
+.cardbody{
+    background-color: rgb(223, 124, 176);
+}

@@ -1,0 +1,10 @@
+
+<% perguntas.forEach(pergunta =>{ %>
+    <div class="card mt-4">
+        <div class="card-header"><h4><a href="/responder/<%=pergunta.id%>"><%= pergunta.titulo%></a></h4></div>
+        <div class="card-body">
+            <p><%= pergunta.pergunta%></p>
+        </div>
+    </div>  
+<% }) %>
+

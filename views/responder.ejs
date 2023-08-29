@@ -1,0 +1,28 @@
+<%- include ('partials/header.ejs') %>
+<body>
+    <%- include ('partials/navbar.ejs')%>
+    <div class="container">    
+    <h1>Pergunta</h1>
+    <div class="card mt-4">
+        <div class="card-header"><h4><%= pergunta.titulo%></h4></div>
+        <div class="card-body">
+            <p><%= pergunta.pergunta%></p>
+        </div>
+    </div>
+    <hr>
+    <form action="/resposta/salvar">
+        <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" class="form-control">
+        <label for="resposta">Resposta:</label>
+        <textarea placeholder="Digite sua Resposta Aqui" name="resposta" class="form-control" cols="30" rows="10">
+
+        </textarea>
+        <button type="submit" class="btn btn-success mt-4">Salvar Resposta</button>
+    </form>
+    <hr>
+    <h4>Respostas</h4>
+    <%- include ('partials/cardRespostas.ejs')%>
+</div>
+</body>
+<%- include('partials/footer.ejs') %>

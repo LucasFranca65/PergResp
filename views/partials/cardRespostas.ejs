@@ -1,0 +1,12 @@
+<% respostas.forEach(resposta =>{ %>
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4><%= resposta.usuario%></a></h4>
+            <small><%= resposta.createdAt%></small>
+        </div>
+        <div class="card-body">
+            <p><%= resposta.resposta%></p>
+        </div>
+    </div>  
+<% }) %>
+
